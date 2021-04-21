@@ -8,9 +8,9 @@
             @csrf
     
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" class="form-control @error('email') is-invalid @enderror">
-                    @error('email')
+                    <label for="text">Username</label>
+                    <input type="text" name="username" id="username" class="form-control @error('username') is-invalid @enderror">
+                    @error('username')
                         <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
                 </div>

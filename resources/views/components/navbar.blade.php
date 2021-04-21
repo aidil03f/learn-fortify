@@ -16,19 +16,21 @@
       </ul>
 
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/register">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/login">Login</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Aidil</a>
+        @guest
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/logout">Logout</a>
+            <a class="nav-link" href="/login">Login</a>
           </li>
-          
+        @else
+          <li class="nav-item">
+              <a class="nav-link" href="#">{{ Auth::user()->name }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+        @endguest
       </ul>
     
     </div>

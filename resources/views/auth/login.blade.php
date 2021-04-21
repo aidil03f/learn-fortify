@@ -24,6 +24,10 @@
                 </div>
 
                 <button type="submit" class="btn btn-block btn-primary">Login</button>
+
+                <div class="text-center mt-3">
+                    Don't have account ? <a href="/register">Register</a>
+                </div>
             </form>
            
         </div>

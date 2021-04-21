@@ -28,7 +28,9 @@
               <a class="nav-link" href="#">{{ Auth::user()->name }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/logout">Logout</a>
+              <a class="nav-link" href="/logout" 
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Logout</a>
+                <form action="/logout" method="post" id="logout-form">@csrf</form>
             </li>
         @endguest
       </ul>

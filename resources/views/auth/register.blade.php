@@ -45,6 +45,10 @@
                 </div>
 
                 <button type="submit" class="btn btn-block btn-primary">Register</button>
+
+                <div class="text-center mt-3">
+                    Already have account ? <a href="/login">Login</a>
+                </div>
             </form>
         </div>
     </div>
